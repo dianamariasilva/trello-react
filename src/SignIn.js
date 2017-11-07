@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import './App.css';
 
 const SignIn = () => {
-    return(
-<div>
+    return (
+        <div>
             <main id="main_container" role="main">
                 <div data-reactid=".0">
                     <div
@@ -65,8 +65,8 @@ const SignIn = () => {
                 <span style={{ display: 'block', width: 40, height: 40, background: 'url("data:image/png', marginLeft: 4, borderRadius: '3px 0px 0px 3px', marginRight: 0 }} />
             </a>
         </div>
-)
-} 
+    )
+}
 
 
 export default SignIn;
