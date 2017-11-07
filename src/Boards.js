@@ -5,7 +5,7 @@ import './App.css';
 
 const Boards = ({ todos }) => {
    const todoList = todos.map((todo,index) => 
-   <div className="text-center">
+   <div className="text-center posts">
    <ul key={todo.id} className="mark"> 
        <div className="row">
        <li className="col-lg-12">{todo.name}</li>

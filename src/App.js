@@ -6,12 +6,12 @@ import SignUp from './SignUp';
 import Boards from './Boards';
 // import CheckoutView from './TesBoard'
 import {Provider} from 'redux-zero/react'
-//import store from './store'
+import store from './store'
 import registerServiceWorker from './registerServiceWorker';
 import {HashRouter, Switch, Route} from 'react-router-dom';
 
 const App = () => (
-  <Provider >
+  <Provider store={store} >
     <HashRouter>
       <Switch>
         <Route  exact path = "/" component={SignUp}/>

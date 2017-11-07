@@ -36,8 +36,10 @@ const SignIn = () => {
                                         defaultValue={12345678}
                                         data-reactid=".0.0.0.1.2.0" />
                                 </div>
-                                <button type="submit" data-reactid=".0.0.0.1.3">
+                                <button>
+                                <NavLink type="submit" data-reactid=".0.0.0.1.3" to="/boards">
                                     Sign in
+</NavLink>
 </button>
                             </form>
                             <a href="/SignUp" data-reactid=".0.0.0.2">
