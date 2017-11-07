@@ -12,10 +12,10 @@ const Boards = ({ todos }) => {
        </div>
        <li><div className="row"> 
             <div className="col-lg-6 col-sx-12">
-                <button className="text-right" onClick={() => removePlayer(index)}>Delete comment</button>
+                <button className="text-right" onClick={() => removePlayer(index)}>X</button>
             </div>
             <div className="col-lg-6 col-sx-12">
-                <button className="text-left" onClick={() => abuse()}>Report as abuse</button>
+                <button className="text-left" onClick={() => abuse()}>Cancel</button>
             </div>
            </div>
        </li> 
