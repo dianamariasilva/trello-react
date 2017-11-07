@@ -1,21 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ReactDOM from  'react-dom';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import Boards from './Boards';
+// import CheckoutView from './TesBoard'
+import {Provider} from 'redux-zero/react'
+//import store from './store'
+import registerServiceWorker from './registerServiceWorker';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p> */}
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Provider >
+    <HashRouter>
+      <Switch>
+        <Route  exact path = "/" component={SignUp}/>
+        <Route  path = "/signup" component={SignUp}/>
+        <Route  path = "/signin" component={SignIn}/>
+        <Route  path = "/boards" component={Boards}/>
+        {/* <Route  path = "/carousel" component={CarouselView}/>
+        <Route  path = "/details" component={CheckoutView}/> */}
+      </Switch>
+    </HashRouter>
+  </Provider>
+)
 
 export default App;
