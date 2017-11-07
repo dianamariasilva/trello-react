@@ -5,12 +5,10 @@ import './App.css';
 
 const Boards = ({ todos }) => {
    const todoList = todos.map((todo,index) => 
-   <div className="text-center posts">
+   <div className="text-center">
    <ul key={todo.id} className="mark"> 
        <div className="row">
        <li className="col-lg-12">{todo.name}</li>
-       <hr/>
-       <li className="col-lg-12">{todo.comment}</li>
        </div>
        <li><div className="row"> 
             <div className="col-lg-6 col-sx-12">
@@ -26,12 +24,24 @@ const Boards = ({ todos }) => {
     );
    const onSubmit = e => {
       e.preventDefault();
-      addTodo(this.name.value, this.comment.value)
+      addTodo(this.name.value)
    };
    return (
       <div className="wrapper">
          <header>
-            <h3>New comment</h3>
+             <div
+id="147-hola-este-es-un-tablero-de-prueba"
+className="board"
+data-reactid=".0.0.1.0.1.1.$147-hola-este-es-un-tablero-de-prueba">
+<div
+className="inner"
+data-reactid=".0.0.1.0.1.1.$147-hola-este-es-un-tablero-de-prueba.0">
+<h4 data-reactid=".0.0.1.0.1.1.$147-hola-este-es-un-tablero-de-prueba.0.0">
+Hola este es un tablero de prueba
+</h4>
+</div>
+</div>
+   <h3>New board</h3>
             <form onSubmit={onSubmit}>
             <div className="group">
                 <br/>
@@ -42,28 +52,16 @@ const Boards = ({ todos }) => {
                   required
                   className="input form-control"
                />
-               <span className="highlight" />
-               <label className="label"> Name</label>
             </div>
             <div className="group">  
                 <br/>
-               <input
-                  type="text"
-                  name= "comment"
-                  required
-                  className="input form-control"
-                  ref={e => (this.comment = e)}
-               />
-               <span className="highlight" />
-               <label className="label">Comment</label>
                <button type="submit" name="submit" value="submit" >
-                  Submit
+                  Create Board
                </button>
                </div>
             </form>
          </header>
          <div className="main">
-            <h4> Comments : {todos.length} </h4>
             <ul id="invitedList" className="comments">
                 {todoList}
             </ul>

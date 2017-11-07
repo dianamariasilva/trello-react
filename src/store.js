@@ -3,8 +3,7 @@ import createStore from 'redux-zero';
 const TODOS = [
    {
       id: 0,
-      name: 'Diana María',
-      comment: 'Hi'
+      name: 'board'
    }
 ];
 

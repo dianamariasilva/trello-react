@@ -1,11 +1,10 @@
 import store from './store';
 
-export const addTodo = (name, comment) => {
+export const addTodo = (name) => {
    let oldList = store.getState().todos;
    const newList = oldList.concat({
       id: oldList.length,
-      name: name,
-      comment: comment,
+      name: name
    });
    store.setState({
       todos: newList
