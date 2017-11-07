@@ -3,6 +3,7 @@ import { connect } from 'redux-zero/react';
 import { NavLink, Link } from 'react-router-dom';
 // import { addDishes, moveSlides } from './actions'
 import './App.css';
+import logo from './images/download.png'
 
 const SignUp = () => {
     return (
@@ -13,7 +14,7 @@ const SignUp = () => {
                     data-reactid=".0.0">
                     <main data-reactid=".0.0.0">
                         <header data-reactid=".0.0.0.0">
-                            <div className="logo" data-reactid=".0.0.0.0.0" />
+                            <img src={logo} />
                         </header>
                         <form id="sign_up_form" data-reactid=".0.0.0.1">
                             <div className="field" data-reactid=".0.0.0.1.0">
@@ -60,9 +61,9 @@ const SignUp = () => {
                                 Sign up
         </button>
                         </form>
-                        <a href="/sign_in" data-reactid=".0.0.0.2">
+                        <NavLink to="/signin" data-reactid=".0.0.0.2">
                             Sign in
-        </a>
+        </NavLink>
                     </main>
                 </div>
             </div>
