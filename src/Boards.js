@@ -33,13 +33,6 @@ const Boards = ({ todos }) => {
 id="147-hola-este-es-un-tablero-de-prueba"
 className="board"
 data-reactid=".0.0.1.0.1.1.$147-hola-este-es-un-tablero-de-prueba">
-<div
-className="inner"
-data-reactid=".0.0.1.0.1.1.$147-hola-este-es-un-tablero-de-prueba.0">
-<h4 data-reactid=".0.0.1.0.1.1.$147-hola-este-es-un-tablero-de-prueba.0.0">
-Hola este es un tablero de prueba
-</h4>
-</div>
 </div>
    <h3>New board</h3>
             <form onSubmit={onSubmit}>
